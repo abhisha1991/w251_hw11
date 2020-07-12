@@ -21,3 +21,5 @@ The second way to take action is to act randomly. This is called exploring. Inst
 
 
 #### 7. Describe "Q-Learning".
+
+Q learning is a form of DRL that is used to learn the optimal decision policy in a markov decision process.

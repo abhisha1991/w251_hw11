@@ -25,3 +25,5 @@ The second way to take action is to act randomly. This is called exploring. Inst
 Q learning is a form of a DRL algorithm that is used to learn the optimal decision policy in a markov process. The goal of Q learning is to find the optimal policy by learning the optimal Q values for each state action pair. It does this by storing the optimal Q values in a Q table, that consists of the Q values (expected reward) from following the policy for the corresponding state action pairs. So once we have the optimal Q values, we can ultimately maximize the expected average reward by playing a number of steps in an episode of the experiment / game. Q learning typically uses the Bellman equation for defining the Q function.
 
 ![bellman](https://github.com/abhisha1991/w251_hw11/blob/master/Bellman2.png)
+
+Q learning is a values based learning algorithm, because it iteratively (over a number of episodes) learns the Q values (for each state action pair) using the Bellman equation, until the Q function converges to the optimal Q function (Q*). Here is an [example](https://www.youtube.com/watch?v=qhRNvCVVJaA) of the lizard game that uses the Q learning algorithm.

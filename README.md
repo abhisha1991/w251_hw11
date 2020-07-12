@@ -2,14 +2,16 @@
 
 Here is an introduction to Q learning that was very helpful: https://www.novatec-gmbh.de/en/blog/introduction-to-q-learning/ 
 
-1. What parameters did you change?
-2. What values did you try?
-3. Did you try any other changes that made things better or worse?
-4. Did they improve or degrade the model? Did you have a test run with 100% of the scores above 200?
-5. Based on what you observed, what conclusions can you draw about the different parameters and their values?
+#### 1. What parameters did you change?
 
 
-6. What is the purpose of the epsilon value?
+#### 2. What values did you try?
+#### 3. Did you try any other changes that made things better or worse?
+#### 4. Did they improve or degrade the model? Did you have a test run with 100% of the scores above 200?
+#### 5. Based on what you observed, what conclusions can you draw about the different parameters and their values?
+
+
+#### 6. What is the purpose of the epsilon value?
 
 The epsilon value captures the exploration vs exploitation factor. Taken from [here](https://towardsdatascience.com/simple-reinforcement-learning-q-learning-fcddc4b6fe56)
 
@@ -18,4 +20,4 @@ An agent interacts with the environment in 1 of 2 ways. The first is to use the 
 The second way to take action is to act randomly. This is called exploring. Instead of selecting actions based on the max future reward we select an action at random. Acting randomly is important because it allows the agent to explore and discover new states that otherwise may not be selected during the exploitation process. You can balance exploration/exploitation using epsilon (ε) and setting the value of how often you want to explore vs exploit.
 
 
-7. Describe "Q-Learning".
+#### 7. Describe "Q-Learning".

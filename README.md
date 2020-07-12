@@ -27,3 +27,5 @@ Q learning is a form of a DRL algorithm that is used to learn the optimal decisi
 ![bellman](https://github.com/abhisha1991/w251_hw11/blob/master/Bellman2.png)
 
 Q learning is a values based learning algorithm, because it iteratively (over a number of episodes) learns the Q values (for each state action pair) using the Bellman equation, until the Q function converges to the optimal Q function (Q*). Here is an [example](https://www.youtube.com/watch?v=qhRNvCVVJaA) of the lizard game that uses the Q learning algorithm. So in essence, Q learning uses value iteration (the Q table) to perform learning as opposed to policy based iteration. Policy-based learning algorithms estimate the value function with a greedy policy obtained from the last policy improvement.
+
+Q learning is also "model free" learning because there is no explicit model that the agent needs to learn. The learning for the agent happens as a result of the derivation of an optimal policy based on its interaction with its environment.

@@ -1,6 +1,10 @@
 # w251_hw11 by abhisha@berkeley.edu 
 
-Here is an introduction to Q learning that was very helpful: https://www.novatec-gmbh.de/en/blog/introduction-to-q-learning/ 
+Here is an introduction to Q learning that was very helpful: 
+
+1. https://www.novatec-gmbh.de/en/blog/introduction-to-q-learning/ 
+2. https://www.youtube.com/watch?v=aCEvtRtNO-M
+3. https://www.youtube.com/watch?v=qhRNvCVVJaA 
 
 ### 1. What parameters did you change?
 

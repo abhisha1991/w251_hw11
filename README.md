@@ -25,9 +25,36 @@ Changes:
 
 Result:
 
-1. Rewards converged to around -160 after 800 iterations
+1. Training rewards converged to around -160 after 800 iterations. We didn't perform any testing on this because we knew it would perform badly.
 2. The lander was very unstable, didnt perform well at all
 
+#### Attempt2:
+
+Changes:
+
+1. We changed epsilon min to control for exploration vs exploitation factor (increased from 0.01 to 0.4)
+2. Made the decay for epsilon become even slower (from 0.995 to 0.999)
+3. Decreased gamma slightly (0.90 vs 0.99)
+4. Increased our learning rate (0.01 vs 0.001) - to optimize more aggressively.
+5. Left the neural network architecture and batch size the same
+
+Result:
+
+1. Training rewards converged to around -110 after 500 iterations (better than attempt 1 in fewer iterations)
+2. The lander was very unstable, didnt perform well at all - it even landed on its head some times, see [this](https://github.com/abhisha1991/w251_hw11/blob/master/attempt2/testing_run10.mp4)
+
+#### Attempt3:
+
+Changes:
+
+1. We changed epsilon min to control for exploration vs exploitation factor (increased from 0.01 to 0.4)
+2. We added a new layer to the network, to see if this would improve things (32, 16, 8) vs (16, 8)
+3. Decreased gamma slightly (0.90 vs 0.99) to not pay a lot of attention to future steps
+
+Result:
+
+1. Training rewards converged to around -85 after 500 iterations (better than attempt 2 in same iterations)
+2. The lander showed an interesting behavior - it didnt seem to converge in its landing. It was basically just hovering in space during the entire test duration, see [this](https://github.com/abhisha1991/w251_hw11/blob/master/attempt3/testing_run20.mp4)
 
 ### 4. Did they improve or degrade the model? Did you have a test run with 100% of the scores above 200?
 
@@ -37,6 +64,7 @@ We got pretty close. If we look at the below (our final attempt), we see that mo
 
 ### 5. Based on what you observed, what conclusions can you draw about the different parameters and their values?
 
+I think the important call out was that in this example, changing the number of neural layers and most importantly the activation function - helped improve the model performance. The other parameters may be used for even more fine tuning, but primary importance needs to be given to the architecture itself!
 
 ### 6. What is the purpose of the epsilon value?
 
